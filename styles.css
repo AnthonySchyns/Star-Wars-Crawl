@@ -1,0 +1,109 @@
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: fondchange;
+  animation-duration: 0s;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+@keyframes fondchange {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-image: url(etoiles.jpg);
+  }
+}
+.intro {
+  opacity: 0;
+  text-align: center;
+  font-size: 40px;
+  color: #4bd5ee;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 25%;
+  animation-name: time;
+  animation-delay: 0s;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+  left: 500px;
+  top: -100px;
+  position: absolute;
+}
+@keyframes time {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.logo {
+  opacity: 0;
+  animation-name: scale;
+  animation-delay: 8s;
+  animation-duration: 11s;
+  animation-iteration-count: 1;
+  position: absolute;
+  width: 1000px;
+  height: 600px;
+  left: 210px;
+  top: 70px;
+}
+@keyframes scale {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.1);
+  }
+  to {
+    opacity: 0;
+  }
+}
+.container {
+  display: flex;
+  position: absolute;
+  width: 800px;
+  height: 720px;
+  perspective: 280px;
+  left: 320px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.titre {
+  width: 775px;
+  height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 230%;
+  text-align: justify;
+  font-size: 35px;
+  color: #e5b13a;
+  animation-name: defile;
+  animation-duration: 50s;
+  animation-delay: 15s;
+}
+@keyframes defile {
+  0% {
+    transform: rotateX(20deg) translateY(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(25deg) translateY(-2000px);
+  }
+}
