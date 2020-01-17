@@ -58,7 +58,10 @@ body {
   top: 70px;
 }
 @keyframes scale {
-  from {
+  0% {
+    opacity: 0;
+  }
+  15% {
     opacity: 1;
   }
   to {
@@ -84,13 +87,13 @@ body {
   height: 1000px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 230%;
+  margin-top: 250%;
   text-align: justify;
   font-size: 35px;
   color: #e5b13a;
   animation-name: defile;
   animation-duration: 50s;
-  animation-delay: 15s;
+  animation-delay: 13s;
 }
 @keyframes defile {
   0% {
@@ -105,5 +108,6 @@ body {
 
   100% {
     transform: rotateX(25deg) translateY(-2000px);
+    opacity: 0;
   }
 }
